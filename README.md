@@ -1,4 +1,4 @@
-# 오션클리어 (OceanClear)
+# 블루윈도우 (Blue Window)
 
 > **로켓 발사부터 사격훈련까지, 바다를 잠시 막아야 할 때 어업 피해가 가장 작은 선택지를 위성 데이터로 찾아 주는 서비스**
 > 부제: 위성 선박 데이터 기반 해상 통제 영향 관리 플랫폼 (첫 적용: 우주발사장 해역)
@@ -43,7 +43,7 @@
 
 선택지가 실제로 얼마나 넓은지는 상황마다 다르다. 그래서 상황별로 쓰는 방법이 다르다.
 
-| 상황 | 누가 | 고를 수 있는 것 | 오션클리어가 쓰는 방법 |
+| 상황 | 누가 | 고를 수 있는 것 | 블루윈도우가 쓰는 방법 |
 |:---:|---|---|---|
 | **A. 연간 발사 계획** | 민간 발사기업 (시험 발사처럼 일정이 비교적 유연할 때) | 어느 달·분기에 쏠지 | 과거 같은 시기 조업 기준선 (지금 작동) |
 | **B. 예비일 고르기** | 발사운영팀 | 발사창 안의 며칠 | 날씨를 반영한 예측 모델 (개발 예정) |
@@ -56,7 +56,7 @@
 
 ```bash
 git clone <저장소 주소>
-cd oceanclear
+cd bluewindow
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 streamlit run app/streamlit_app.py
@@ -69,7 +69,7 @@ streamlit run app/streamlit_app.py
 ## 폴더 구조
 
 ```
-oceanclear/
+bluewindow/
 ├─ docs/        # 기획서, 개발 계획, progress/ (주간 발표)
 ├─ data/        # GFW CSV (연도별), 통제구역 GeoJSON, notices/ (항행경보)
 ├─ analysis/    # 분석 스크립트와 결과

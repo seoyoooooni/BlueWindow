@@ -1,4 +1,4 @@
-# 오션클리어 개발 계획
+# 블루윈도우 개발 계획
 
 ## 목차
 
@@ -212,7 +212,7 @@
 ## 6. 폴더 구조
 
 ```
-oceanclear/
+bluewindow/
 ├─ README.md · requirements.txt · .env.example
 ├─ docs/
 │  ├─ PROPOSAL.md          # 제출용 기획서

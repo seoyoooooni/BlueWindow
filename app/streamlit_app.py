@@ -1,4 +1,4 @@
-"""오션클리어 해커톤 데모.
+"""블루윈도우 해커톤 데모.
 
 실행:  streamlit run app/streamlit_app.py
 화면:  ① 해역 조업 지도  ② 후보일 비교  ③ 영향근거 리포트  ④ 과거 발사일 확인
@@ -13,7 +13,7 @@ import streamlit as st
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import core  # noqa: E402
 
-st.set_page_config(page_title="오션클리어 데모", page_icon="🌊", layout="wide")
+st.set_page_config(page_title="블루윈도우 데모", page_icon="🌊", layout="wide")
 
 INK = "#0b3a53"
 ACCENT = "#1f9e89"
@@ -49,7 +49,7 @@ df = load()
 GRID_YEARS = core.grid_years(df)
 ALL_YEARS = sorted(df.year.unique().tolist())
 
-st.title("🌊 오션클리어")
+st.title("🌊 블루윈도우")
 st.caption("발사운영팀이 제시한 후보 일정·통제구역을 위성 AIS 조업 패턴과 비교해, "
            "어업영향이 가장 작은 대안과 협의 근거를 만드는 데모입니다. "
            "보상액을 계산하거나 안전구역을 설계하지 않습니다.")
@@ -183,9 +183,9 @@ with tab3:
         with st.expander("리포트 미리보기", expanded=False):
             st.markdown(md)
         d1, d2 = st.columns(2)
-        d1.download_button("리포트 내려받기 (.md)", md, file_name=f"oceanclear_report_{dt}.md")
+        d1.download_button("리포트 내려받기 (.md)", md, file_name=f"bluewindow_report_{dt}.md")
         d2.download_button("선박 목록 내려받기 (.csv)", rv.to_csv(index=False).encode("utf-8-sig"),
-                           file_name=f"oceanclear_vessels_{dt}.csv")
+                           file_name=f"bluewindow_vessels_{dt}.csv")
         st.warning("이 리포트는 보상액이 아니라 **영향 규모와 근거**입니다. 통제로 줄어든 조업이 모두 손실은 아니며, "
                    "AIS 미탑재 소형 어선은 포함되지 않습니다.")
 
@@ -216,5 +216,5 @@ with tab4:
                        legend=dict(orientation="h", y=-0.2))
     st.plotly_chart(figl, width="stretch")
     st.info("일 단위 자료로는 몇 시간짜리 통제의 효과가 뚜렷하게 보이지 않습니다(3차만 낮은 편, 2차는 오히려 높음). "
-            "그래서 오션클리어는 '측정된 손실'이 아니라 '통제 시간대에 노출되는 조업 규모'를 제시합니다. "
+            "그래서 블루윈도우는 '측정된 손실'이 아니라 '통제 시간대에 노출되는 조업 규모'를 제시합니다. "
             "직접 측정은 시간 단위 항적(V-Pass 등) 연계 후 가능합니다.")
