@@ -20,8 +20,11 @@
 ## 문서 
 
 [제출용 기획서](docs/PROPOSAL.md) 
+
 [개발 계획](docs/DEV_PLAN.md) 
+
 [개발 과정](docs/PROGRESS.md) 
+
 [데이터 분석 원본 수치](analysis/results_2022_2025.md) 
 ---
 
