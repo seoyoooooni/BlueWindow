@@ -3,3 +3,5 @@ __pycache__/
 .DS_Store
 .env
 data/raw/
+data/notices/detail/
+data/notices/list_*.json
