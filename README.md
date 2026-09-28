@@ -7,7 +7,7 @@
 
 ---
 
-## 30초 요약
+## 요약
 
 | | |
 |---|---|
@@ -17,15 +17,12 @@
 
 ---
 
-## 문서 읽는 순서
+## 문서 
 
-| 문서 | 이럴 때 읽기 |
-|---|---|
-(docs/PROPOSAL.md) | 제출용 기획서 |
-(docs/DEV_PLAN.md) | 개발 계획 |
-(docs/PROGRESS.md) | 개발 과정 |
-(analysis/results_2022_2025.md) | 데이터 분석 원본 수치 |
-
+[제출용 기획서](docs/PROPOSAL.md) 
+[개발 계획](docs/DEV_PLAN.md) 
+[개발 과정](docs/PROGRESS.md) 
+[데이터 분석 원본 수치](analysis/results_2022_2025.md) 
 ---
 
 ## 하는 일과 하지 않는 일
