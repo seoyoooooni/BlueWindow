@@ -1,0 +1,13 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Naro control zone (approx, 24km x 78km)", "note": "가정값: 나로우주센터 남쪽 직사각형. 실제 항행경보 좌표로 교체 필요" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[127.40,34.40],[127.66,34.40],[127.66,33.70],[127.40,33.70],[127.40,34.40]]]
+      }
+    }
+  ]
+}
